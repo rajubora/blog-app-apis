@@ -1,4 +1,4 @@
-package com.codewithraj.blog.services.impl;
+package com.codewithraj.blog.impl;
 
 import com.codewithraj.blog.entities.User;
 import com.codewithraj.blog.exceptions.ResourceNotFoundException;
@@ -23,8 +23,8 @@ private UserRepo userRepo;
     @Override
     public UserDto createUser(UserDto userDto) {
 
-User user =this.dtoToUser(userDto);
-  User savedUser= this.userRepo.save(user);
+        User user =this.dtoToUser(userDto);
+        User savedUser= this.userRepo.save(user);
         return this.userToDto(savedUser);
     }
 
@@ -37,7 +37,7 @@ User user =this.dtoToUser(userDto);
         user.setEmail(userDto.getEmail());
         user.setName(userDto.getName());
         user.setAbout(userDto.getAbout());
-       User updateUser=  this.userRepo.save(user);
+        User updateUser=  this.userRepo.save(user);
         UserDto userDto1 = this.userToDto(updateUser);
         return userDto1;
 
@@ -46,7 +46,7 @@ User user =this.dtoToUser(userDto);
     @Override
     public UserDto getUserById(Integer userId) {
 
-      User user=  this.userRepo.findById(userId).orElseThrow(() ->new ResourceNotFoundException("User", "Id", userId));
+        User user=  this.userRepo.findById(userId).orElseThrow(() ->new ResourceNotFoundException("User", "Id", userId));
         return this.userToDto(user);
     }
 
@@ -54,7 +54,7 @@ User user =this.dtoToUser(userDto);
     public List<UserDto> getAllUsers() {
 
       List<User> users=  this.userRepo.findAll();
-    List <UserDto> userDtos  = users.stream().map(user -> this.userToDto(user)).collect(Collectors.toList());
+      List <UserDto> userDtos  = users.stream().map(user -> this.userToDto(user)).collect(Collectors.toList());
 
       return userDtos;
 
