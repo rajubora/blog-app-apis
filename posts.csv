@@ -1,0 +1,11 @@
+post_id,post_add_date,post_content,image,post_title,category_id,user_id,user_user_id
+1,"2023-05-05 20:16:05.136000","programming longuage is used to communicate with machine",default.png,"what is a programming language",1,2,NULL
+2,"2023-05-06 13:16:25.855000","hyper text markup language",default.png,"what is a html",1,2,NULL
+3,"2023-05-06 13:17:15.803000","hyper text markup language",default.png,post3,1,2,NULL
+4,"2023-05-06 13:17:20.470000","hyper text markup language",default.png,post4,1,2,NULL
+5,"2023-05-06 13:17:23.864000","hyper text markup language",default.png,post5,1,2,NULL
+6,"2023-05-06 13:17:27.505000","hyper text markup language",default.png,post6,1,2,NULL
+7,"2023-05-06 13:17:31.662000","hyper text markup language",default.png,post7,1,2,NULL
+8,"2023-05-06 13:17:37.733000","hyper text markup language",default.png,post8,1,2,NULL
+9,"2023-05-06 13:17:49.731000","hyper text markup language",default.png,post9,1,2,NULL
+10,"2023-05-06 13:18:00.007000","hyper text markup language",default.png,post10,1,2,NULL
