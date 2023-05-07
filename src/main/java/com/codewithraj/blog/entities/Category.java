@@ -1,5 +1,6 @@
 package com.codewithraj.blog.entities;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,7 +14,6 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-
 public class Category {
 
     @Id

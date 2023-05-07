@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 @Setter
 public class UserDto {
 
-    private int id;
+    private Integer userId;
 
     @NotEmpty
     @Size(min=4, message = "username must be of 4 characters !")
